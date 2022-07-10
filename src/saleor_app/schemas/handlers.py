@@ -54,6 +54,7 @@ class SaleorEventType(str, Enum):
     COLLECTION_CREATED = "COLLECTION_CREATED"
     COLLECTION_UPDATED = "COLLECTION_UPDATED"
     COLLECTION_DELETED = "COLLECTION_DELETED"
+    TRANSACTION_ACTION_REQUEST = "TRANSACTION_ACTION_REQUEST"
 
 
 WebHookHandlerSignature = Optional[Callable[[List[Webhook], DomainName], Awaitable]]
