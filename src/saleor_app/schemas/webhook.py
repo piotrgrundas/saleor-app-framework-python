@@ -43,7 +43,7 @@ class WebhookV3(BaseModel):
     payload: Any
 
     class Config:
-        extra = Extra.forbid
+        extra = Extra.allow
         allow_mutation = False
 
 
